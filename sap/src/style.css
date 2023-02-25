@@ -1,0 +1,109 @@
+html,
+body,
+#root {
+  min-height: 100vh;
+  background-image: url('https://teamwoodgames.com/static/media/background.0b3ec8a1.png');
+  background-size: 100vh;
+}
+
+#root {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+}
+
+.turtle-icon {
+  position: absolute;
+}
+
+#left-turtle {
+  top: 50%;
+  right: 100%;
+  translate: -25% -50%;
+}
+
+#right-turtle {
+  top: 50%;
+  left: 100%;
+  translate: 25% -50%;
+}
+
+main {
+  margin: 1rem 0 4rem 0;
+  max-width: 600px;
+  width: 100%;
+  background: #000e19;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+#youtube-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #ff4500;
+  border: 0;
+  border-bottom: 10px solid #af2f00;
+  padding: 1rem;
+  border-radius: 7px;
+  width: 100px;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: #ffa500;
+  border-color: #a16900;
+}
+
+.card svg {
+  font-size: 6rem;
+  height: 100%;
+  width: 100%;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 1.5rem;
+}
+
+footer {
+  margin-top: auto;
+  background: black;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .hide-small {
+    display: none;
+  }
+}
